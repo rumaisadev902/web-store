@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maira Dev | Portfolio</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Premium Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="bracket">{</span> maira<span class="dot">.</span>dev <span class="bracket">}</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="badge">Available for Work</div>
+            <h1>Building <span class="gradient-text">Digital Experiences</span> with Code.</h1>
+            <p>Hi, I’m Maira. A Full-stack Developer specializing in building exceptional digital products that are
+                fast, functional, and beautiful.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-main">View Projects</a>
+                <a href="#" class="btn-sub">Download CV</a>
+            </div>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <h2>Selected Work</h2>
+            <p>A glimpse into my recent development projects</p>
+        </div>
+
+        <div class="project-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-img"></div>
+                <div class="card-body">
+                    <span class="tag">Next.js / Tailwind</span>
+                    <h3>SaaS Dashboard</h3>
+                    <p>Real-time analytics platform with beautiful data visualization.</p>
+                    <a href="#" class="project-link">Explore <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-img"></div>
+                <div class="card-body">
+                    <span class="tag">React / Node.js</span>
+                    <h3>E-Commerce Core</h3>
+                    <p>Modern shopping experience with seamless payment integration.</p>
+                    <a href="#" class="project-link">Explore <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Aapka koi sawal hai ya kaam shuru karna chahte hain? Mujhe message karein!</p>
+        </div>
+
+        <!-- Yahan action mein apni Formspree ID dalni hogi -->
+        <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" class="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Aapka Naam" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Aapki Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Aapka Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-main">Message Bhejein</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
